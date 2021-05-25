@@ -1,0 +1,61 @@
+:root {
+  --color-primary: #3f51b5;
+  --color-black: #090909;
+  --color-light-grey: #f3f3f3;
+  --text-color: var(--color-black);
+
+
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* defining custom font-weight */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04rem;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-link-hover: var(--color-primary);
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #3f51b5;
+  color: white;
+  font-weight: 600;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar span {
+  margin-left: 15px;
+}
+
+.username {
+  margin-right: 20px;
+  margin-top: 11px;
+}
+
+.toolbar a {
+  margin-left: 10px;
+}
+
+.user {
+  margin-right: 50px;
+}
+
+.mat-button {
+  margin-right: 2rem;
+}
+
