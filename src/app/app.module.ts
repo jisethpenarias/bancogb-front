@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './navigation/navigation.component';
 import { DemoMaterialModule } from './material-module';
-import { AdminClientesComponent } from './admin-clientes/admin-clientes.component';
+import { AdminClientesComponent } from './clientes/admin-clientes/admin-clientes.component';
 import { AdminCuentasComponent } from './admin-cuentas/admin-cuentas.component';
 import { AdminTipoCuentasComponent } from './admin-tipo-cuentas/admin-tipo-cuentas.component';
 import { AdminTransaccionesComponent } from './admin-transacciones/admin-transacciones.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ClienteDialog } from './clientes/dialog-clientes/cliente-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     AdminClientesComponent,
     AdminCuentasComponent,
     AdminTipoCuentasComponent,
-    AdminTransaccionesComponent
+    AdminTransaccionesComponent,
+    ClienteDialog
   ],
   imports: [
     BrowserModule,

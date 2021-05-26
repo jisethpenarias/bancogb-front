@@ -1,0 +1,13 @@
+table {
+  width: 80%;
+  margin-left: 10rem;
+}
+
+.create-button-div {
+  height: 50px;
+}
+
+.create-button {
+  position: fixed;
+  margin-left: 10rem;
+}
