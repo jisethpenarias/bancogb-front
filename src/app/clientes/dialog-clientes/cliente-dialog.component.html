@@ -3,7 +3,11 @@
 <form class="example-form">
   <mat-form-field class="columns-1">
     <mat-label>Tipo de Documento</mat-label>
-    <input matInput type="string" placeholder="escoja el tipo de documento">
+    <mat-select>
+      <mat-option *ngFor="let tipoDocumento of tiposDocumentos" [value]="tipoDocumento.value">
+        {{tipoDocumento.viewValue}}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
   <mat-form-field class="columns-2">
     <mat-label>Número de Documento</mat-label>
