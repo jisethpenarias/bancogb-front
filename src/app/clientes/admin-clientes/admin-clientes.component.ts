@@ -33,7 +33,7 @@ export class AdminClientesComponent implements OnInit {
 
   addCliente(): void {
     const dialogRef = this.dialog.open( ClienteDialog, {
-      width: '250px',
+      width: '460px',
       data: {}
   })
 }

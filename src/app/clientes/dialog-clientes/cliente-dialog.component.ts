@@ -7,6 +7,7 @@ import { Cliente } from "../admin-clientes/admin-clientes.component";
 @Component({
   selector: 'cliente-dialog',
   templateUrl: 'cliente-dialog.component.html',
+  styleUrls: ['cliente-dialog.component.css']
 })
 export class ClienteDialog {
 
