@@ -12,6 +12,8 @@ import { AdminTipoCuentasComponent } from './admin-tipo-cuentas/admin-tipo-cuent
 import { AdminTransaccionesComponent } from './admin-transacciones/admin-transacciones.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClienteDialog } from './clientes/dialog-clientes/cliente-dialog.component';
+import { DialogClientesUpdateComponent } from './clientes/dialog-clientes-update/dialog-clientes-update.component';
+import { DialogClientesDeleteComponent } from './clientes/dialog-clientes-delete/dialog-clientes-delete.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { ClienteDialog } from './clientes/dialog-clientes/cliente-dialog.compone
     AdminCuentasComponent,
     AdminTipoCuentasComponent,
     AdminTransaccionesComponent,
-    ClienteDialog
+    ClienteDialog,
+    DialogClientesUpdateComponent,
+    DialogClientesDeleteComponent
   ],
   imports: [
     BrowserModule,

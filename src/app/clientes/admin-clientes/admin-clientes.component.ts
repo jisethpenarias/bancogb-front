@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ClienteService } from '../../services/cliente.service';
+import { DialogClientesDeleteComponent } from '../dialog-clientes-delete/dialog-clientes-delete.component';
+import { DialogClientesUpdateComponent } from '../dialog-clientes-update/dialog-clientes-update.component';
 import { ClienteDialog } from '../dialog-clientes/cliente-dialog.component';
 
 export interface Cliente {
@@ -36,11 +38,21 @@ export class AdminClientesComponent implements OnInit {
       width: '460px',
       data: {}
   })
-}
+  }
 
-  //   const randomColumn = Math.floor(Math.random() * this.displayedColumns.length);
-  //   this.columnsToDisplay.push(this.displayedColumns[randomColumn]);
-  // }
+  updateCliente(): void {
+    const dialogRef = this.dialog.open( DialogClientesUpdateComponent, {
+      width: '460px',
+      data: {}
+    })
+  }
+
+  deleteCliente(): void {
+    const dialogRef = this.dialog.open( DialogClientesDeleteComponent, {
+      width: '460px',
+      data: {}
+    })
+  }
 
   ngOnInit(): void {
     console.log('iniciando componente AdminClientesComponent')

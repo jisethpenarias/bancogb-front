@@ -1,0 +1,23 @@
+.columns-1 {
+  margin-left: 10px;
+}
+
+.columns-2 {
+  margin-left: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.mat-raised-button {
+  margin-left: 16rem;
+}
+
+.mat-raised-button.mat-warn {
+  margin-left: 8px;
+}
