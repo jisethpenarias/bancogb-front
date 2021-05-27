@@ -1,0 +1,43 @@
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="content" role="main">
+  <div class="customDiv">
+    <mat-card>
+      <mat-card-title>Consignación</mat-card-title>
+      <br/>
+      <br/>
+      <form>
+        <mat-card-subtitle>Tipo de Cuenta</mat-card-subtitle>
+        <mat-form-field appearance="fill">
+          <mat-label>Escoger cuenta</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let tipoCuenta of tiposCuentas" [value]="tipoCuenta.value">
+              {{tipoCuenta.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br/>
+        <br/>
+        <mat-card-subtitle>Numero de Cuenta</mat-card-subtitle>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="000000" value="">
+        </mat-form-field>
+        <br/>
+        <br/>
+        <mat-card-subtitle>Valor a consignar</mat-card-subtitle>
+        <mat-form-field>
+          <input matInput type="number" placeholder="ingrese valor a consignar"
+          [(ngModel)]="valorConsignacion"  [formControl]="valorConsignacionControl">
+          <mat-error *ngIf="valorConsignacionControl.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <div>
+          <button mat-raised-button class="buton-limpiar">Limpiar</button>
+          <button mat-raised-button color="primary">Consignar</button>
+        </div>
+      </form>
+    </mat-card>
+  </div>
+</div>

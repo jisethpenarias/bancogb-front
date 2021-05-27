@@ -14,6 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClienteDialog } from './clientes/dialog-clientes/cliente-dialog.component';
 import { DialogClientesUpdateComponent } from './clientes/dialog-clientes-update/dialog-clientes-update.component';
 import { DialogClientesDeleteComponent } from './clientes/dialog-clientes-delete/dialog-clientes-delete.component';
+import { ClienteConsultaSaldoComponent } from './cliente-consulta-saldo/cliente-consulta-saldo.component';
+import { ClienteConsignacionComponent } from './cliente-consignacion/cliente-consignacion.component';
+import { ClienteRetiroComponent } from './cliente-retiro/cliente-retiro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,14 +28,19 @@ import { DialogClientesDeleteComponent } from './clientes/dialog-clientes-delete
     AdminTransaccionesComponent,
     ClienteDialog,
     DialogClientesUpdateComponent,
-    DialogClientesDeleteComponent
+    DialogClientesDeleteComponent,
+    ClienteConsultaSaldoComponent,
+    ClienteConsignacionComponent,
+    ClienteRetiroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DemoMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

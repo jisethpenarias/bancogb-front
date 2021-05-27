@@ -2,12 +2,18 @@
   <span>BancoGB</span>
     <div class="spacer"></div>
     <nav class="navbar-menu">
-      <button mat-button [matMenuTriggerFor]="aboveMenu">Administración</button>
-      <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-button class="button-admin" [matMenuTriggerFor]="adminMenu">Administración</button>
+      <mat-menu #adminMenu="matMenu" yPosition="above">
         <button routerLink="/admin-clientes" routerLinkActive="active" mat-menu-item>Clientes</button>
         <button routerLink="/admin-cuentas" routerLinkActive="active" mat-menu-item>Cuentas</button>
         <button routerLink="/admin-tipo-cuentas" routerLinkActive="active" mat-menu-item>Tipos de Cuentas</button>
         <button routerLink="/admin-transacciones" routerLinkActive="active" mat-menu-item>Transacciones</button>
+      </mat-menu>
+      <button mat-button class="button-cliente" [matMenuTriggerFor]="clientMenu">Cliente</button>
+      <mat-menu #clientMenu="matMenu" yPosition="above">
+        <button routerLink="/cliente-consulta-saldo" routerLinkActive="active" mat-menu-item>Consulta de Saldo</button>
+        <button routerLink="/cliente-consignacion" routerLinkActive="active" mat-menu-item>Consignaciones</button>
+        <button routerLink="/cliente-retiro" routerLinkActive="active" mat-menu-item>Retiros</button>
       </mat-menu>
     </nav>
     <p class="username">
